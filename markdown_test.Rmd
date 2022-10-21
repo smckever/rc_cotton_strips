@@ -22,9 +22,10 @@ summary(cars)
 
 You can also embed plots, for example:
 
-```{r pressure, echo=FALSE}
+```{r pressure, echo=TRUE}
 plot(pressure)
 ```
+
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
 
 # H1
@@ -48,25 +49,20 @@ underline
 
 </ins>
 
+-   bullet 1
+-   bullet 2
 
-- bullet 1
-- bullet 2
+1.  number 1
+2.  number 1b
+3.  number 2
+4.  number 3
+5.  number 4
+6.  number 5
 
-
-1. number 1
-1. number 1b
-2. number 2
-3. number 3
-4. number 4
-5. number 5
-
-
----
+------------------------------------------------------------------------
 
 Date run: `r Sys.Date()`
-
 
 ```{r}
 sessionInfo()
 ```
-
