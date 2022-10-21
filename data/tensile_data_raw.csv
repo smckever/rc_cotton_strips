@@ -1,0 +1,193 @@
+﻿Sample_ID,Replicate ID,Tensile Strength,Notes for individual reps,Notes for group of 4
+SSS001_COT,A,33.3,,All look similar; Relatively clean with minimal purple/grey staining 
+,B,37.6,,
+,C,31.1,,
+,D,33.7,,
+SSS002_COT,A,17.0,Tore near top vice,"All look similar; Relatively clean with some orange, purple, and grey staining"
+,B,13.6,,
+,C,26.2,,
+,D,13.4,,
+SSS003_COT,A,8.1,"Tore near top vice, some fring emissing, minimal orange staining and sediment caked on",All look similar
+,B,7.4,Some orange and dark grey staining ,
+,C,11.0,"Minimal staining, some fringe missing, tore at bottom vice",
+,D,16.3,"Some orange and brown staining, some fringe missing ",
+SSS004_COT,A,14.2,"Large dark orange stain, tore near bottom vice, sediment caked on",All look similar
+,B,8.2,"Large dark orange stains, sediment caked on",
+,C,19.9,One large dark orange stain on one side ,
+,D,24.9,One large dark orange stain on one side ,
+SSS005_COT,A,8.8,"Dark grey stains, large orange stain on one side, most fringe gone ",
+,B,5.2,"Dark grey stains, organge stain on one side, some fringe gone ",
+,C,6.2,"Dark grey stains, all fringe gone",
+,D,7.3,"Tore near bottom vice, dark grey stains, sediment caked on",
+SSS006_COT,A,1.0,Already torn near one end of strip prior to pulling,All look similar; lots of sediment caked on; all fringe gone on each strip
+,B,1.2,Already torn in middle prior to pulling,
+,C,0.4,,
+,D,0.7,Already torn on one long side ,
+SSS007_COT,A,24.1,,All look similar; relatively clean except for some sediment caked on
+,B,28.0,,
+,C,18.6,,
+,D,17.5,,
+SSS008_COT,A,28.2,,All look similar; Some brown staining and sediment caked on
+,B,38.1,,
+,C,34.7,,
+,D,20.3,,
+SSS009_COT,A,44.4,,All look similar; Some brown staining and sediment caked on
+,B,34.0,,
+,C,19.4,Some slippage; had to stop and re-tighten,
+,D,37.2,,
+SSS010_COT,A,29.6,,"All look similar; relatively clean with some light staining (purple, green, grey, few black spots)"
+,B,28,,
+,C,26.2,,
+,D,27,,
+SSS011_COT,A,6.7,,All look similar; some fringe missing (mainly on short ends); black spots; brown and green stains; sediment caked on
+,B,9.5,,
+,C,8.2,,
+,D,7.0,Tore at top vice,
+SSS012_COT,A,16.6,Tore near bottom vice,All look similar; stained and lots of seidment caked on
+,B,12.1,,
+,C,12.6,Tore near top and bottom vices,
+,D,11.6,,
+SSS013_COT,A,1.0,VERY degraded; strip very small,
+,B,2.4,"Tore near top, most fringe missing, orange and brown staining, very degraded",
+,C,NA,"Strip was in multiple pieces, all too small to pull ",
+,D,NA,"Strip was in multiple pieces, all too small to pull ",
+SSS014_COT,A,,,
+,B,,,
+,C,,,
+,D,,,
+SSS015_COT,A,2.5,Tore at bottom vice,"All look similar; most/all fringe missing, orange and brown staining, sediment caked on"
+,B,0.5,Already partly torn before pulling,
+,C,4.5,Tore near top and bottom vices,
+,D,2.7,,
+SSS016_COT,A,5.6,Moderate brown and orange staining,
+,B,10.4,Moderate brown and orange staining,
+,C,30.1,Light purple and brown staining,
+,D,32.4,Light purple and brown staining,
+SSS017_COT,A,3.6,Most fringe missing,
+,B,4.2,Most fringe missing,
+,C,16.1,Orange and brown staining on one side,
+,D,7.6,Minimal staining; little bit of fringe missing ,
+SSS018_COT,A,31.6,,All look similar; fairly clean with some light staining
+,B,23.9,Tore near top vice,
+,C,24.5,Tore near bottom vice ,
+,D,13.7,,
+SSS019_COT,A,11.9,,All look similar; fairly clean with some light staining
+,B,17.4,,
+,C,8.2,,
+,D,21.2,Tore near bottom vice,
+SSS020_COT,A,23.2,,All look similar; fairly clean with some light staining
+,B,24.7,,
+,C,19.8,Tore at top vice,
+,D,14.9,,
+SSS021_COT,A,56.5,Some slippage; had to stop and re-tighten,All look similar; very clean/white
+,B,48.6,,
+,C,58.6,,
+,D,62.3,,
+SSS022_COT,A,45.4,Tore near top vice,All look similar; very clean/white
+,B,53.3,Some slippage; had to stop and re-tighten,
+,C,54.7,Some slippage; had to stop and re-tighten,
+,D,55.4,,
+SSS023_COT,A,4.8,,"All look similar; all had some fringe missing, some staining, and sediment caked on "
+,B,3.2,,
+,C,4,,
+,D,3.8,,
+SSS024_COT,A,4.8,"Some fringe missing; light, brown staining, tore near top vice",
+,B,1.9,Some light staining and sediment caked on,
+,C,0.8,"A little torn prior to pulling; some fringe missing, light staining",
+,D,2.5,"Some fringe missing, light staining, seidment caked on",
+SSS025_COT,A,NA,,Not enough to pull. Just a few small scraps of cotton.
+,B,NA,,
+,C,NA,,
+,D,NA,,
+SSS026_COT,A,NA,,Not enough to pull. Just a small amount of unraveled threads.
+,B,NA,,
+,C,NA,,
+,D,NA,,
+SSS027_COT,A,13.5,"Huge dark orange stain, brown stains, sediment caked on",
+,B,18.9,"Small orange stain, brown stains, sediment caked on, some fringe missing",
+,C,4.3,"Most fringe missing, sediment caked on, large orange stain",
+,D,10.7,"Fringe missing, large orange stain, lots of sediment caked on",
+SSS028_COT,A,21.9,,All look similar; large brown stains
+,B,32.0,,
+,C,21.0,One orange stain,
+,D,32.1,,
+SSS029_COT,A,4.7,Some fringe missing ,"All look similar; Large dark stains and some orange stains, some sediment caked on"
+,B,17.6,,
+,C,13.0,Some fringe missing,
+,D,5.3,Some fringe missing,
+SSS030_COT,A,11.7,,All look similar; relatively clean with moderate staining and sediment caked on
+,B,17.6,,
+,C,17.1,Tore at top vice,
+,D,14.9,Tore at top vice,
+SSS031_COT,A,22.6,,"All look similar; small black stains, lots of sediment caked on, several dead bugs of the same spp. in tube"
+,B,17.0,,
+,C,17.0,,
+,D,22.0,,
+SSS032_COT,A,20.6,,All look similar; sediment caked on
+,B,14.9,Tore near bottom vice,
+,C,18.8,,
+,D,18.1,Tore near top vice,
+SSS033_COT,A,38.7,,All look similar; clean/white
+,B,32.6,Tore near bottom vice,
+,C,47.1,,
+,D,30.0,,
+SSS034_COT,A,58.7,,All look similar; clean/white
+,B,56.4,,
+,C,56.6,,
+,D,50.6,,
+SSS035_COT,A,55.9,,All look similar; clean/white with some light brown staining
+,B,51.5,,
+,C,58.6,,
+,D,58.1,,
+SSS036_COT,A,12.3,One orange stain and few light brown stains,
+,B,12.0,Dark orange and brown stain on one side,
+,C,21.0,One large light orange and brown stain,
+,D,11.4,Some dark brown stains,
+SSS037_COT,A,9.4,Tore at bottom vice,All look similar; light with dark brown stains and sediment caked on
+,B,9.6,,
+,C,5.4,,
+,D,9.8,,
+SSS038_COT,A,58.6,,All look similar' very clean/white with some light orange and yellow staining 
+,B,63.5,,
+,C,53.3,,
+,D,59.3,,
+SSS039_COT,A,2.6,"Already had a tear before pulling, many dark stains, some sediment caked on",
+,B,4.2,"Large orange stain on one side, some dark brown stains",
+,C,14.2,Few large light brown stains,
+,D,2.8,"Already torn in two pieces prior to pulling, pulled the longer piece, brown stains ",
+SSS040_COT,A,45.9,Tore near bottom vice,All look similar; clean with few light brown stains
+,B,19.9,Unclear why this one was so much lower than others,
+,C,48.0,,
+,D,42.4,Tore near top vice,
+SSS041_COT,A,12.5,Clean except large grey and orange stain,Different degrees of staining
+,B,3.6,"Lots of seidment caked on, couldn't get straight in jaws",
+,C,26.0,,
+,D,25.9,"Clean, tore at top vice",
+SSS042_COT,A,29.6,Tore near top vice,All look similar; clean with a few light brown stains
+,B,22.0,,
+,C,8.4,Didn't look obviously different from others - not sure why it's lower,
+,D,16.6,Tore near top and bottom vices ,
+SSS043_COT,A,23.7,,All look similar; some light purple and brown stains
+,B,22.6,Tore near top vice,
+,C,13.2,,
+,D,26.3,,
+SSS044_COT,A,28.7,,All look similar; look fairly clean with a few brown stains 
+,B,22.5,Tore near bottom vice,
+,C,35.0,,
+,D,27.4,,
+SSS045_COT,A,38.8,,All look similar; clean with just a few light brown stains
+,B,30.0,,
+,C,30.1,,
+,D,32.5,,
+SSS046_COT,A,56.0,Tore near top vice,All look similar; clean with a few brown stains
+,B,53.7,Tore near top vice,
+,C,52.4,,
+,D,58.2,,
+SSS047_COT,A,,,
+,B,,,
+,C,,,
+,D,,,
+SSS048_COT,A,31.5,Tore near top vice,All have sediment caked on
+,B,19.5,"Tore near bottom and top vice, large dark orange stain",
+,C,28.2,Large dark orange stain,
+,D,24.8,Light orange stain,
