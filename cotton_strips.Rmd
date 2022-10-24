@@ -82,10 +82,5 @@ mean.resp <- resp %>%
 ggplot()+
   geom_point(aes(x = means$mean.ts, y = mean.resp$mean.rate.hr, color = means$Sample))
 
-#ggplot(data=data.frame(x=df1$x, y=df2$x), aes(x,y)) + geom_point()
-#ggplot() + geom_point(aes(x=df1$x, y=df2$x))
-#ggplot(data=NULL, aes(x=df1$x, y=df2$x)) + geom_point()
-#ggplot(data=df1, aes(x=x)) + geom_point(aes(y=df2$x))
-
 ```
 
