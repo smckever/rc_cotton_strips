@@ -16,37 +16,76 @@ data <- read.csv("data/tensile_data_raw.csv")
 merged <- data %>% 
   mutate(site.rep = paste0(Sample_ID, "_", Replicate.ID))
 
-
-
 ```
 
 ```{r plot}
 ggplot(merged, aes(x = site.rep, y = Tensile.Strength, fill = Sample_ID))+
-  geom_col()
+  geom_col()#+
+  #theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1))
 
 ```
 
+```{r Means}
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+#mean slope and standard deviation calculated for each site
+
+means <- merged %>% 
+  group_by(Sample_ID) %>% 
+  mutate(mean(Tensile.Strength)) %>% 
+  mutate(sd(Tensile.Strength))
+
+means <- means %>%
+  separate(Sample_ID, c("Sample", "type"), sep = "_", remove = FALSE) %>%
+  rename("mean.ts" = "mean(Tensile.Strength)") %>% 
+  rename("sd.ts" = "sd(Tensile.Strength)") %>% 
+  distinct(mean.ts, .keep_all = TRUE) %>% 
+  select(-Replicate.ID, -Tensile.Strength, -Notes.for.individual.reps, - Notes.for.group.of.4, - site.rep)
+
 ```
 
-## R Markdown
+```{r Averages Plot}
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+ggplot(means, aes(x = Sample_ID, y = mean.ts)) +
+  geom_col()+
+  geom_errorbar(aes(ymin = mean.ts - sd.ts, ymax = mean.ts + sd.ts), width = 0.2)+
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1))
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+ggplot(means, aes(x = mean.ts))+
+  geom_histogram()
 
-```{r cars}
-summary(cars)
 ```
 
-## Including Plots
+```{r Respiration}
+#does tensile strength correlate with lab respiration?
 
-You can also embed plots, for example:
+resp <- read.csv("data/SSS_ICON-ModEx_Sediment_Incubations_Respiration_Rates_merged_by_gara009_on_2022-08-19.csv")
 
-```{r pressure, echo=FALSE}
-plot(pressure)
+#average respiration rate for now
+
+mean.resp <- resp %>% 
+  separate(Sample_ID, c("Sample", "rep"), sep = "-", remove = FALSE) %>%   group_by(Sample) %>% 
+  mutate(mean(rate_mg_per_L_per_min)) %>% 
+  mutate(sd(rate_mg_per_L_per_min)) %>% 
+  mutate(mean(rate_mg_per_L_per_h)) %>% 
+  mutate(sd(rate_mg_per_L_per_h)) %>% 
+  rename("mean.rate.min" = "mean(rate_mg_per_L_per_min)") %>% 
+  rename("sd.rate.min" = "sd(rate_mg_per_L_per_min)") %>% 
+  rename("mean.rate.hr" = "mean(rate_mg_per_L_per_h)") %>% 
+  rename("sd.rate.hr" = "sd(rate_mg_per_L_per_h)") %>% 
+  distinct(mean.rate.min, .keep_all = TRUE) %>% 
+  select(-slope_of_the_regression, - rate_mg_per_L_per_min, - rate_mg_per_L_per_h, -R_squared, - R_squared_adj, -p_value, -total_incubation_time_min, -number_of_points, -Sample_ID, -rep)
+
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+```{r lab resp v cotton strips}
+
+ggplot()+
+  geom_point(aes(x = means$mean.ts, y = mean.resp$mean.rate.hr, color = means$Sample))
+
+#ggplot(data=data.frame(x=df1$x, y=df2$x), aes(x,y)) + geom_point()
+#ggplot() + geom_point(aes(x=df1$x, y=df2$x))
+#ggplot(data=NULL, aes(x=df1$x, y=df2$x)) + geom_point()
+#ggplot(data=df1, aes(x=x)) + geom_point(aes(y=df2$x))
+
+```
+
