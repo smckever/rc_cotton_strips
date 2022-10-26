@@ -83,4 +83,24 @@ ggplot()+
   geom_point(aes(x = means$mean.ts, y = mean.resp$mean.rate.hr, color = means$Sample))
 
 ```
+```{r Dillman plots}
+coeff <- 1
+
+resp.ts <- full_join(means, mean.resp, by = 'Sample')
+
+resp.ts.long <- resp.ts %>% 
+  mutate(mean.rate.hr = mean.rate.hr*coeff) %>% 
+  select(Sample, mean.ts, mean.rate.hr) %>% 
+  pivot_longer(names_to = "y_new", values_to = "val", mean.rate.hr:mean.ts)
+
+ggplot(resp.ts.long, aes(x = Sample))+
+  geom_col(position = "dodge2", aes(y = val, fill = y_new))+
+          scale_y_continuous(name = "Mean Tensile Strength", 
+                             sec.axis = sec_axis(~.*coeff, name = "Mean Resp per Hour"))+
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1))
+
+ggplot(mean.resp, aes(x = Sample, y = mean.rate.hr))+
+  geom_col()+
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1))
+```
 
